@@ -1,0 +1,99 @@
+#map {
+    margin: auto;
+    height: 500px;
+    width: 100%;
+}
+.elemnts{
+    position: relative;
+}
+.top{
+    text-align: center;
+    background: url('pattern-bg.png') no-repeat;
+    background-size: 100%;
+    padding: 3%;
+    margin:-10px -10px 0;
+}
+.input-group{
+    padding: 1% 30%;
+}
+.input-group input{
+    width: 300px;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 50px;
+}
+.input-group .btn{
+    background-color: black;
+    color: white;
+}
+.top h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    background-color: bisque;
+    padding: 2% 10%;
+}
+.ip_adress_text, .location_text, .timezone_text{
+    border-right: 1px solid black;
+    padding-right: 10%;
+}
+footer{
+    text-align: center;
+}
+footer span{
+    animation-name: footeranim;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes footeranim{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.1;
+    }
+}
+@media only screen and (max-width:2135px) {
+    .info h1{
+        font-size: large;
+        font-weight: 900;
+    }
+}
+@media only screen and (max-width:1140px) {
+    .ip_adress_text, .location_text, .timezone_text{
+        padding-right: 5%;
+    }
+}
+@media only screen and (max-width:991px) {
+    
+    .input-group{
+        padding: 1%;
+        width: 100%;
+        height: 20px;
+    }
+    .info {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .ip_adress_text, .location_text, .timezone_text{
+        border-right: none;
+    }
+    .isp_text p{
+        margin-left: -30px;
+    }
+    .top{
+        background-repeat: repeat;
+        padding: 15% 5%;
+    }
+}
+@media only screen and (max-width:767px) {
+    #map{
+        height: 400px;
+    }
+}
